@@ -4,6 +4,7 @@ html, body {
 	margin: 0;
 	font-family: Helvetica, sans-serif;
 	line-height: 1.5em;
+	background: #333;
 }
 
 header {
@@ -12,6 +13,7 @@ header {
 }
 
 main {
+	background: #fff;
 	padding: 30px;
 }
 
@@ -51,7 +53,6 @@ ul li {
 
 footer {
 	text-align: center;
-	background: #333;
 	color: #eee;
 	padding: 30px;
 }
