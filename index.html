@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang='en'>
+<head>
+	<meta charset='utf8' />
+
+	<title>WeakMap Dev Tools Test</title>
+
+	<link rel='stylesheet' href='main.css' />
+</head>
+<body>
+	<header>
+		<h1>WeakMap Test</h1>
+	</header>
+	<main>
+		<h2>Test</a>
+		<ul>
+			<li>
+				<a class='btn good' href='#weakMap'>With WeakMap</a>
+			</li>
+			<li>
+				<a class='btn bad' href='#noWeakMap'>Without WeakMap</a>
+			</li>
+		</ul>
+
+		<h2>Setup</h2>
+		<ol>
+			<li>Ensure you are running the latest release of Chrome Canary</li>
+			<li>Enable Javascript experimental features by navigating to chrome://flags</li>
+			<li>Open dev tools, go to the timeline and click "memory"</li>
+		</ol>
+
+		<h2>Instructions</h2>
+		<ol>
+			<li>Click the test type under the "Test" heading above</li>
+			<li>Refresh the page</li>
+			<li>Click the record (circle button) at the top of the devtools window</li>
+			<li>Wait until dev tools shows 1 minute or so of recording on the timeline</li>
+			<li>Stop the recording</li>
+		</ol> 
+	</main>
+
+	<footer>
+		<p>If you like this and want to see more cool stuff like it, check out my <a href='http://zacharybabtkis.com/blog'>blog</a>
+	
+	<!-- Script containing weak map and non-weak-map test -->
+	<script src='test.js'></script>
+	
+	<script>
+		var hash = window.location.hash, test;
+
+		test = hash === '#weakMap' ? withWeakMap() : withoutWeakMap();
+				
+		test.login(); 
+		setTimeout(test.logout, 10000);
+
+	</script>
+</body>
+</html>

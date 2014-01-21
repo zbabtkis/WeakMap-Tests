@@ -1,0 +1,57 @@
+html, body {
+	color: #444;
+	padding: 0;
+	margin: 0;
+	font-family: Helvetica, sans-serif;
+	line-height: 1.5em;
+}
+
+header {
+	background: #eee;
+	padding: 30px;
+}
+
+main {
+	padding: 30px;
+}
+
+a {
+	color: #3498db;
+}
+
+code {
+	display: block;
+	padding: 30px;
+}
+
+ul { 
+	margin-left: 0;
+	padding-left: 0;
+}
+
+ul li {
+	list-style: none;
+	display: inline-block;
+}
+
+.btn {
+	padding: 15px;
+	display: block;
+	text-decoration: none;
+	color: #eee;
+}
+
+.btn.good {
+	background: #2ecc71;
+}
+
+.btn.bad {
+	background: #e74c3c;
+}
+
+footer {
+	text-align: center;
+	background: #333;
+	color: #eee;
+	padding: 30px;
+}
